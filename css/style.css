@@ -1,0 +1,350 @@
+
+* {
+	box-sizing: border-box;
+}
+
+
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 16px;
+	line-height: normal;
+	background-color: #FFEBBF;
+	margin: 0;
+	/* padding-top: -90px; */
+	animation: colorchange 30s; /* animation-name followed by duration in seconds*/
+		 /* you could also use milliseconds (ms) or something like 2.5s */
+	-webkit-animation: colorchange 30s; /* Chrome and Safari */
+}
+
+/*  -----------------  BG HEADER ANIMATIONS -------------- */
+
+
+
+
+/*  -----------------  END BG HEADER ANIMATIONS --------------  */
+
+/* ----- BACKGROUND ANIMATIONS --------- */
+@keyframes colorchange
+{
+	0%   {background: #FFEBBF;}
+	25%  {background: #C3EFDE;}
+	50%  {background: #FFE0E0;}
+	75%  {background: #C3EFDE;}
+	100% {background: #FFEBBF;}
+}
+
+@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+{
+	0%   {background: #FFEBBF;}
+	25%  {background: #C3EFDE;}
+	50%  {background: #FFE0E0;}
+	75%  {background: #C3EFDE;}
+	100% {background: #FFEBBF;}
+}
+
+/* ------ END BG ANIMATIONS ------------- */
+
+/* --------- Element Animation ----------  */
+
+.hidden {
+     opacity: 0;
+}
+.visible {
+     opacity: 1;
+		 z-index: -1;
+}
+
+/* ----------END Element Animation -------- */
+
+header {
+	background-color: #ffffff;
+	margin: 0;
+	padding: 1em;
+	height: 90px;
+	position: fixed;
+	top: 0;
+	transition: top 0.2s ease-in-out;
+	width: 100%;
+}
+
+div.wrap-header{
+	max-width: 46em;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+p.header-name {
+	font-weight: 600;
+	font-size: 2.5em;
+}
+
+p.header-tag {
+	color: #757575;
+}
+
+/* span.work {
+	color: #ffffff;
+	border-bottom: 1px solid #ffffff;
+} */
+
+h1 {
+	color: #000000;
+	font-weight: 600;
+	font-size: 3em;
+	margin-bottom: .5em;
+}
+
+h2 {
+	color: #000000;
+	margin-bottom: 0.5em;
+	margin-top: 1em;
+	font-weight: 600;
+	font-size: 2em;
+}
+
+p {
+	margin: 0;
+	line-height: 1.4;
+	max-width: 33em;
+}
+
+.wrapper {
+	margin: 8em auto 0 auto;
+	max-width: 46em;
+
+}
+
+p.bio {
+	margin-bottom: 1em;
+}
+
+p.bold {
+	font-weight: 600;
+	margin-top: 2em;
+}
+
+
+/* ------------ NAV BAR --------------*/
+
+.nav-up {
+  top: -90px;
+	z-index: 1;
+}
+
+.nav-down {
+	z-index: 1;
+}
+
+/*  -------------------------------- */
+
+a {
+	color: #1772D6;
+	display: inline-block;
+	font-size: 1em;
+	/* height: 10px; */
+	width: 200px;
+	z-index: 1;
+
+
+}
+
+a.underline {
+	text-decoration: underline;
+}
+
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	text-decoration: underline;
+}
+
+a:active {
+	text-decoration: underline;
+}
+
+p.phonenumber {
+	font-size: 1em;
+}
+
+div.link {
+	margin-top: 1em;
+	font-size: 1em;
+}
+
+section#about {
+	margin-bottom: 4em;
+	max-width: 46em;
+}
+
+/*  ----- css ANIMATIONS on load ------- */
+
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+		-moz-transform: translate3d(0, 100%, 0);
+		-o-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+}
+
+
+
+/* -------- PSEUDO CLASSES -------- */
+
+.dot {
+	position: relative;
+	margin-left: 20px;
+	display: block;
+	margin-bottom: 1em;
+}
+
+.dot::before {
+	position: absolute;
+	display:inline-block;
+	content: "";
+	height: 10px;
+	width: 10px;
+	top: 5px;
+	left: -20px ;
+	background-color: #000000;
+}
+
+
+/* ---------------------- MEDIA QUERIES ---------------------- */
+
+/* ----Tablets----------- */
+
+@media screen
+and (min-width: 700px) {
+/* and (max-width: 1024px)  { */
+
+	.wrapper {
+		margin: 8em auto 1.5em auto;
+		max-width: 43em;
+		overflow: visible;
+	}
+
+
+/* ------ Desktop --------*/
+
+/* @media screen and (min-width: 900px) { */
+
+	h1 {
+		font-size: 3em;
+	}
+
+	h2 {
+		margin-top: 1em;
+	}
+
+	p.header-name {
+		font-size: 1.5em;
+	}
+
+	div.link-wrap {
+		max-width: 35em;
+		margin-bottom: 2em;
+	}
+
+	.inline {
+		display: inline-block;
+		margin-right: 3em;
+		font-size: 1em;
+	}
+
+	p.inline.phonenumber {
+		font-size: 1em;
+	}
+
+	a {
+		font-size: 1em;
+		margin-bottom: .5em;
+		display: inline-block;
+	}
+
+	p.phonenumber {
+		font-size: 1em;
+		line-height: inherit;
+	}
+}
+
+
+@media screen
+  and (max-width: 700px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+		.wrapper {
+			margin: 7em auto 0 auto;
+			max-width: 28em;
+			overflow-x: visible;
+		}
+
+		.dot::before {
+			top: 6.5px;
+			height: 10px;
+			width: 10px;
+		}
+
+		a, p.inline, p.phonenumber {
+			font-size: 1em;
+			padding-left: 0.3em;
+		}
+
+		div.wrap-header {
+			margin: 0 auto;
+			max-width: 28em;
+		}
+
+		div.wrap-header > p.header-name {
+			font-size: 1em;
+		}
+
+		h1 {
+			font-size: 2em;
+		}
+
+		h2, p.bio.bold {
+			font-size: 1.5em;
+		}
+
+	}
+
+/*  ----------------- MOBILE --------------------*/
+@media screen
+	and (min-width: 200px)
+  and (max-width: 480px) {
+
+		header {
+			height: 75px;
+		}
+
+		div.wrap-header {
+			margin: 0 auto;
+			max-width: 20em;
+		}
+
+
+		.wrapper {
+			margin: 7em auto 0 auto;
+			max-width: 20em;
+			overflow-x: visible;
+		}
+
+	}

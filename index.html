@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/animate.css">
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./js/viewportchecker.js"></script>
+
+
+    <title>Maren Sjotveit Portfolio</title>
+  </head>
+  <body>
+    <header class="nav-down">
+        <div class="wrap-header">
+          <p class="header-name">Maren Sjøtveit</p>
+          <!-- <p class="header-tag">Frontend-utvikler</p> -->
+
+          <svg width="60px" height="40px" viewBox="0 0 60 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+              <title>Logo</title>
+              <desc>Created with Sketch.</desc>
+              <defs></defs>
+              <g id="mbs-mobile-home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-275.000000, -40.000000)">
+                  <g id="Logo" transform="translate(275.000000, 40.000000)">
+                      <rect id="BG" fill="#CDCDCD" x="0" y="0" width="60" height="40"></rect>
+                      <polygon id="1" fill="#FFFFFF" points="14.8334543 10 10 20 14.8334543 30 18 30 13.1668361 20 18 10"></polygon>
+                      <polygon id="2" fill="#FFFFFF" points="42 10 46.8335693 20 42 30 45.1664307 30 50 20 45.1664307 10"></polygon>
+                      <polygon id="3" fill="#FFFFFF" points="20 10 25.9444015 30 29 30 23.0555985 10"></polygon>
+                      <polygon id="4" fill="#FFFFFF" points="36.9445783 10 31 30 34.0556894 30 40 10"></polygon>
+                  </g>
+              </g>
+          </svg>
+        </div>
+    </header>
+    <div class="wrapper">
+      <section class="post">
+        <h1>Disiplinert, initiativrik og nysgjerrig frontend-utvikler, på jakt etter jobb i Oslo-området</h1>
+        <div class="link-wrap">
+          <a href="mailto:maren.sjotveit@gmail.com" class="inline dot underline">maren.sjotveit@gmail.com</a>
+          <p class="inline phonenumber dot">+47 920 79 760</p>
+        </div>
+
+        <!-- <button class="btn">
+          <p class="btn-text">Se arbeider</p>
+        </button>
+        <button class="btn">
+          <p class="btn-text">Om Maren Sjøtveit</p>
+        </button> -->
+      <!-- <section id="work">
+        <h1>Arbeider</h1>
+        <div>
+          <h2>Digitalt magasin</h2>
+          <p>Responsivt digitalt magasin-konsept, utviklet med HTML, CSS og JavaScript.</p>
+          <img></img>
+          <div><a href="#" class="dot underline">Besøk nettside</a></div>
+          <div><a href="#" class="dot underline">Se koden på Github</a></div>
+        </div>
+        <div>
+          <h2>Grönemadsdagene</h2>
+          <p>Responsivt digitalt magasin-konsept, utviklet med HTML, CSS og JavaScript.</p>
+          <img></img>
+          <div><a href="#" class="dot underline">Besøk nettside - Kommer snart!</a></div>
+          <div><a href="#" class="dot underline">Se koden på Github - Kommer snart!</a></div>
+        </div>
+        <button class="btn">
+            <p class="btn-text">Om Maren Sjøtveit</p>
+        </button>
+      </section> -->
+      <section id="about">
+        <h2>Maren Sjøtveit</h2>
+        <p class="bio">Maren er en 28 år gammel frontend-utvikler som trives med å jobbe i tverrfaglige design- og teknologiteam. Både fordi hun ser viktigheten av denne arbeidsformen for å oppnå gode løsninger, og fordi hun trives godt i samarbeid med andre mennesker.</p>
+        <p class="bio">Hun innehar frontend-kompetanse innenfor HTML, CSS og JavaScript, i tillegg til en dyptgående interesse for faget, dets utvikling, trender og muligheter. Hun er alltid sulten på ny kunnskap og bruker mye tid på å utvikle sine kunnskaper innenfor feltet.</p>
+        <p class="bio">I tillegg til å ha en bachelor fra Høgskolen i Sørøst-Norge i visuell kommunikasjon, har Maren tidligere arbeidet som designer og fotograf, og hun ønsker nå å jobbe fulltid i frontend-feltet. Maren har jobbet med datamaskiner hele sitt liv og har kodet siden 2009, det siste halvåret har hun spesielt utviklet sine kunnskaper i HTML5, CSS3 og JavaScript. Samtidig er design er en viktig del av hennes kompetanse og noe hun kontinuerlig jobber med å forbedre i hennes prosjekter.</p>
+        <p class="bio">I disse dager utvikler Maren sin kompetanse innenfor React og JavaScript.</p>
+        <p class="bio bold">Se Marens arbeid eller kontakt henne her:</p>
+          <a href="mailto:maren.sjotveit@gmail.com" class="dot underline">maren.sjotveit@gmail.com</a>
+          <a href="https://www.linkedin.com/in/marenbs/" target="_blank" class="dot underline">LinkedIn</a>
+          <a href="https://github.com/Duo2" target="_blank" class="dot underline">GitHub</a>
+          <a href="https://codepen.io/marens/" target="_blank" class="dot underline">Codepen</a>
+          <p class="phonenumber dot">+47 920 79 760</p>
+      </section>
+    </section>
+    </div>
+        <script src="./js/script.js"></script>
+        <script>
+        jQuery(document).ready(function() {
+          jQuery('.post').addClass("hidden").viewportChecker({
+            classToAdd: 'visible animated slideInUp',
+            offset: 100
+         });
+        });
+        </script>
+  </body>
+</html>

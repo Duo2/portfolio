@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="40px" viewBox="0 0 60 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="mbs-mobile-home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-275.000000, -40.000000)">
+        <g id="Logo" transform="translate(275.000000, 40.000000)">
+            <rect id="BG" fill="#CDCDCD" x="0" y="0" width="60" height="40"></rect>
+            <polygon id="1" fill="#FFFFFF" points="14.8334543 10 10 20 14.8334543 30 18 30 13.1668361 20 18 10"></polygon>
+            <polygon id="2" fill="#FFFFFF" points="42 10 46.8335693 20 42 30 45.1664307 30 50 20 45.1664307 10"></polygon>
+            <polygon id="3" fill="#FFFFFF" points="20 10 25.9444015 30 29 30 23.0555985 10"></polygon>
+            <polygon id="4" fill="#FFFFFF" points="36.9445783 10 31 30 34.0556894 30 40 10"></polygon>
+        </g>
+    </g>
+</svg>
